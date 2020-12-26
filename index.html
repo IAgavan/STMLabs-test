@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STMLabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>STMLabs</header>
+    <div class="loader">Loading...</div>
+    <div class="content" hidden>
+        <div>
+            <label>
+                Filter users
+                <input id="filter" type="text">
+            </label>
+            
+            <button id="clear-filter">X</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Location</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>registered date</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <template id="user-row">
+                    <tr>
+                        <td class="name"></td>
+                        <td class="picture tooltip">
+                            <img class="thumbnail" src="" alt="User thumnbnail">
+                            <span><img class="user-picture" src="" alt="User picture"></span>
+                        </td>
+                        <td class="location"></td>
+                        <td class="email"></td>
+                        <td class="phone"></td>
+                        <td class="registered"></td>
+                    </tr>
+                </template>
+
+            </tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
