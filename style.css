@@ -1,3 +1,15 @@
+header,
+main,
+.filter{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    padding: 0 5px;
+    border-right: 1px solid black;
+}
+
 .tooltip {
     text-decoration:none;
     position:relative;

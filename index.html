@@ -7,47 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>STMLabs</header>
-    <div class="loader">Loading...</div>
-    <div class="content" hidden>
-        <div>
-            <label>
-                Filter users
-                <input id="filter" type="text">
-            </label>
-            
-            <button id="clear-filter">X</button>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Picture</th>
-                    <th>Location</th>
-                    <th>email</th>
-                    <th>phone</th>
-                    <th>registered date</th>
-                </tr>
-            </thead>
-            <tbody>
-
-                <template id="user-row">
+    <header><h1>STMLabs-test</h1></header>
+    <main>
+        <div class="loader">Loading...</div>
+        <section class="content" hidden>
+            <div class="filter">
+                <label>
+                    Filter by name:
+                    <input id="filter" type="text">
+                </label>
+                
+                <button id="clear-filter">X</button>
+            </div>
+            <hr></hr>
+            <table>
+                <thead>
                     <tr>
-                        <td class="name"></td>
-                        <td class="picture tooltip">
-                            <img class="thumbnail" src="" alt="User thumnbnail">
-                            <span><img class="user-picture" src="" alt="User picture"></span>
-                        </td>
-                        <td class="location"></td>
-                        <td class="email"></td>
-                        <td class="phone"></td>
-                        <td class="registered"></td>
+                        <th>Name</th>
+                        <th>Picture</th>
+                        <th>Location</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>registered date</th>
                     </tr>
-                </template>
+                </thead>
+                <tbody>
 
-            </tbody>
-        </table>
-    </div>
+                    <template id="user-row">
+                        <tr>
+                            <td class="name"></td>
+                            <td class="picture tooltip">
+                                <img class="thumbnail" src="" alt="User thumnbnail">
+                                <span><img class="user-picture" src="" alt="User picture"></span>
+                            </td>
+                            <td class="location"></td>
+                            <td class="email"></td>
+                            <td class="phone"></td>
+                            <td class="registered"></td>
+                        </tr>
+                    </template>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
 <script src="script.js"></script>
 </body>
 </html>
